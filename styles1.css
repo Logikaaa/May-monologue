@@ -1,0 +1,204 @@
+/* Загальні стилі */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #44001F;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Хедер */
+header {
+    background-color: #44001F;
+    color: #fff;
+    padding: 1.5rem 1rem 1rem;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Навігація */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0.5rem 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #660033;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid yellow;
+}
+
+/* Головна частина */
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Секції */
+section {
+    background-color: #fff;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+section:hover {
+    transform: scale(1.01);
+}
+
+section h2 {
+    color: #44001F;
+    text-align: center;
+    margin-top: 0;
+}
+
+section p {
+    color: #444;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Список героїв */
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section ul li {
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+section ul li img {
+    max-width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+section ul li div {
+    flex: 1;
+    min-width: 200px;
+}
+
+section ul li p {
+    margin: 0.2rem 0 0;
+    color: #555;
+}
+
+/* Кнопки */
+button {
+    background-color: #660033;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 2rem auto 0;
+}
+
+button:hover {
+    background-color: #99004d;
+}
+
+/* Футер */
+footer {
+    background-color: #330015;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: #330015;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-top: 4px solid #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-content p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+.footer-content strong {
+    color: #ffcc00;
+}
+
+.social-icons {
+    margin-top: 0.8rem;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #ffcc00;
+}
+
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section ul li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section ul li img {
+        margin-bottom: 1rem;
+    }
+}
